@@ -65,4 +65,22 @@
 
 Great Now you have everything you need to get started!
 
-## Step 4: 
+## Step 4: Create Domain Controller and Install Server 2022
+
+Open up VMware Workstation
+To create a New Virtual machine go to file and select "New Virtual Machine" or you can use Ctrl + N
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 8_15_59" src="https://github.com/user-attachments/assets/d47655e7-5d81-4fef-9270-cf83d4bc9506" />
+
+The Wizard will open. Typical is enough for what we are doing. Click "Browse" and locate the Server ISO you downloaded earlier.
+
+<img width="426" height="398" alt="Captures - File Explorer 9_6_2026 8_13_06" src="https://github.com/user-attachments/assets/7d909713-dfee-4705-b100-c1fd044bacd1" />
+
+<img width="426" height="398" alt="Captures - File Explorer 9_6_2026 8_13_20" src="https://github.com/user-attachments/assets/308028a3-1f2a-42f5-b872-30a649373eb7" />
+
+
+
+
+
+
+
+
