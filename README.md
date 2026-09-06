@@ -13,7 +13,7 @@
 ## 3. Virtual Machine Specifications
 | Machine | OS | vCPU | RAM | HDD | Network |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DC-01** | Windows Server 2022 | 2 | 4 GB | 60 GB | NAT (192.168.10.0/24) |
-| **CLIENT-01** | Windows 11 Pro | 2 | 4 GB | 60 GB | NAT (192.168.10.0/24) |
+| **DC-01** | Windows Server 2022 | 2 | 4 GB | 60 GB | NAT (10.10.10.1/24) |
+| **CLIENT-01** | Windows 11 Pro | 2 | 4 GB | 60 GB | NAT (10.10.10.0/24) |
 
 ## 4. Step-by-Step Deployment Instructions
