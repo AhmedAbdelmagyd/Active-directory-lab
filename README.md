@@ -232,6 +232,7 @@ Click Custom and select the available drive
 <img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_13_04" src="https://github.com/user-attachments/assets/3c7948ec-2b37-48e5-a3f5-901f94ee6de5" />
 
 - In the "root domain name" type in the domain name
+<img width="1101" height="579" alt="646878496-a1ad7f00-d592-480d-a707-a8cd35431684 (1)" src="https://github.com/user-attachments/assets/09115b3f-efe0-4b47-bb6e-a3ccd0848aff" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_13_29" src="https://github.com/user-attachments/assets/d2dfc7b7-0cc2-4112-b438-d3b2c39f8653" />
 
 - Create a password 
