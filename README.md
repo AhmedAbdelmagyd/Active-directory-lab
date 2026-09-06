@@ -171,6 +171,15 @@ Click Custom and select the available drive
 
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_22_15" src="https://github.com/user-attachments/assets/64b5fb66-8d3b-446d-80d3-3b514bf2e684" />
 
+- Click Ok and open up cmd (Command Prompt)
+<img width="1226" height="857" alt="Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_47_54" src="https://github.com/user-attachments/assets/ccc081c4-9873-4b7f-a7dd-346d044399d1" />
+
+- Type in the command ipconfig
+- confirm the ip and subnet you set is there
+
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 10_46_17" src="https://github.com/user-attachments/assets/cab6f057-72c5-482e-86f2-dc0f61cf41a3" />
+
+
 - Great this Done!
 
 - Right now we will go the setting to change the name of the device
@@ -235,4 +244,10 @@ Click Custom and select the available drive
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_44" src="https://github.com/user-attachments/assets/2d4e3184-3ed3-4b3f-a041-b2ced9082499" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_48" src="https://github.com/user-attachments/assets/d1c48790-84e0-4a2c-8027-d168d2661403" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_53" src="https://github.com/user-attachments/assets/450f9875-138c-4de8-9092-541eb66fe3c9" />
+
+- Wait for the Perquisite check to complete.
+- If you face any issues relating to the TCP/IP it means you probably skipped a step or 2
+- Click Install. The installation is a long process and will take time
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_50_11" src="https://github.com/user-attachments/assets/c23e372b-3777-4193-9402-32b38db00ca6" />
+
 
