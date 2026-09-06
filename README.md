@@ -14,7 +14,7 @@
 ## 3. Virtual Machine Specifications
 | Machine | OS | vCPU | RAM | HDD | Network |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DC-01** | Windows Server 2022 | 2 | 4 GB | 64 GB | NAT (10.10.10.1/24) |
+| **DC-01** | Windows Server 2022 | 2 | 4 GB | 64 GB | NAT (10.10.10.2/24) |
 | **CLIENT-01** | Windows 11 Pro | 2 | 4 GB | 60 GB | NAT (10.10.10.0/24) |
 
 ## 4. Step-by-Step Deployment Instructions
@@ -88,7 +88,7 @@ Great Now you have everything you need to get started!
 - IP: 10.10.10.0, Subnet: 255.255.255.0
 <img width="601" height="497" alt="Photos 9_6_2026 9_54_52" src="https://github.com/user-attachments/assets/4c7b3808-9e0e-453e-bd97-d176574ba90b" />
 
-
+- Great now we have a complete isolated network for our virtual machines to communicate through!
   
 - To create a New Virtual machine go to file and select "New Virtual Machine" or you can use Ctrl + N
 <img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 8_15_59" src="https://github.com/user-attachments/assets/d47655e7-5d81-4fef-9270-cf83d4bc9506" />
@@ -145,6 +145,34 @@ Click Custom and select the available drive
 - Once you login windows server will start on its own.
 <img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_16_47" src="https://github.com/user-attachments/assets/f8d3fec5-628a-4695-b78d-ae8edd814be3" />
 
+- Great now we need to make sure the virtual machine is connected to the right network (you can do it without powering off the machine)
+- Outside the machine enter the settings and go to network adapter
+<img width="755" height="702" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_32_17" src="https://github.com/user-attachments/assets/9a48fd15-7303-42b9-ad1c-19e9ec338a0a" />
+
+- Select Custom and Choose the network you created
+<img width="755" height="702" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_35_40" src="https://github.com/user-attachments/assets/168174a9-099b-4a20-abac-e343ad126f95" />
+
+- Go back inside the machine and click "Network and Internet settings"
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_20_51" src="https://github.com/user-attachments/assets/3bbaf2bb-45fa-4c83-a83e-4bf6e5986a5d" />
+
+- Select "Change Adapter Options"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_20_58" src="https://github.com/user-attachments/assets/768abbfa-a8b1-4bb2-a52a-b235d9b46bd0" />
+
+- Open Ethernet0
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_21_08" src="https://github.com/user-attachments/assets/47fff10e-d731-4259-a87c-77f6d9e2e155" />
+
+- Open the Internet Protocol by double-clicking
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_21_14" src="https://github.com/user-attachments/assets/1d154208-6eb6-43ab-92a6-e86e02afe310" />
+
+- Enter the IP, subnet mask, DNS as per the diagram
+<img width="1101" height="579" alt="646878496-a1ad7f00-d592-480d-a707-a8cd35431684" src="https://github.com/user-attachments/assets/002a42b4-45f2-45f3-8d15-65f4580595ec" />
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_22_15" src="https://github.com/user-attachments/assets/64b5fb66-8d3b-446d-80d3-3b514bf2e684" />
+
+- Great this Done!
+
 - Right now we will go the setting to change the name of the device
 
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_24_06" src="https://github.com/user-attachments/assets/239441bd-56dc-465d-a1e4-dada441c0956" />
@@ -165,9 +193,46 @@ Click Custom and select the available drive
 
 <img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_21_02" src="https://github.com/user-attachments/assets/56612209-b393-492f-add1-dd1ff4170a8a" />
 
-- When selecting the server we can identify by the name we just gave it
+- Select the server that we can identify by the name we gave it
 
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_29_55" src="https://github.com/user-attachments/assets/e00356aa-24b7-47bc-8794-3db622185715" />
 
+- Check the Active Directory Domain Services
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_31_45" src="https://github.com/user-attachments/assets/3d803210-3531-43dc-acca-ae44ac6db55c" />
 
+- Once you do this pop up will appear click "Add Features"
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_05_34" src="https://github.com/user-attachments/assets/c905bc64-235d-4c35-8a78-7f2d579010c2" />
+
+- Click "Next"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_07_03" src="https://github.com/user-attachments/assets/d0a4454e-8bc4-4651-a2fc-913d2ec24850" />
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 10_07_45" src="https://github.com/user-attachments/assets/8c446925-8d0c-4a24-bff0-88f4d219edf8" />
+
+- Click "Install"
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_08_18" src="https://github.com/user-attachments/assets/9b799cf2-ff5a-4c9c-9af2-bedffaca2ac1" />
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_08_56" src="https://github.com/user-attachments/assets/5bbad129-fa35-41c1-90fc-2f36c5aec584" />
+
+- After the installation a flag will be triggered.
+- Click on it
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_09_12" src="https://github.com/user-attachments/assets/4e07d2db-59b6-4243-8048-d4aaa5f18a2c" />
+
+- Click "Promote this server to a domain controller"
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 10_11_03" src="https://github.com/user-attachments/assets/84877aca-d39f-4891-b3f3-5a0211ef8842" />
+
+- In this page this where you create domain and give a name
+- Go to add a new forest
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_13_04" src="https://github.com/user-attachments/assets/3c7948ec-2b37-48e5-a3f5-901f94ee6de5" />
+
+- In the "root domain name" type in the domain name
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_13_29" src="https://github.com/user-attachments/assets/d2dfc7b7-0cc2-4112-b438-d3b2c39f8653" />
+
+- Create a password 
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_17_07" src="https://github.com/user-attachments/assets/250f97f4-4cdd-4a93-9195-350cd11678f2" />
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_18_09" src="https://github.com/user-attachments/assets/b793a29e-8b9b-4452-966e-e030e7d2bdca" />
+
+- Click "Next"
+
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_18_32" src="https://github.com/user-attachments/assets/6aa2547f-2f0b-4670-88db-ac9f5e920280" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_44" src="https://github.com/user-attachments/assets/2d4e3184-3ed3-4b3f-a041-b2ced9082499" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_48" src="https://github.com/user-attachments/assets/d1c48790-84e0-4a2c-8027-d168d2661403" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_53" src="https://github.com/user-attachments/assets/450f9875-138c-4de8-9092-541eb66fe3c9" />
 
