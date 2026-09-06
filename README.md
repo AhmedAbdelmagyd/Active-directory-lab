@@ -7,7 +7,7 @@
 - **Hardware:** PC with at least 16GB RAM and 50GB free SSD space.
 - **Hypervisor:** VMware Workstation 17 (or VirtualBox 7.0).
 - **ISOs:** [Windows Server 2022 Evaluation ISO.](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
-- **Tools:** Windows 11 ISO (for the client machine).
+- **Tools:** [Windows 11 ISO (for the client machine).](https://www.microsoft.com/en-us/software-download/windows11)
 - **Skills:** Basic understanding of networking and PowerShell.
 
 ## 3. Virtual Machine Specifications
