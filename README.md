@@ -14,7 +14,7 @@
 ## 3. Virtual Machine Specifications
 | Machine | OS | vCPU | RAM | HDD | Network |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DC-01** | Windows Server 2022 | 2 | 4 GB | 60 GB | NAT (10.10.10.1/24) |
+| **DC-01** | Windows Server 2022 | 2 | 4 GB | 64 GB | NAT (10.10.10.1/24) |
 | **CLIENT-01** | Windows 11 Pro | 2 | 4 GB | 60 GB | NAT (10.10.10.0/24) |
 
 ## 4. Step-by-Step Deployment Instructions
@@ -71,16 +71,48 @@ Open up VMware Workstation
 To create a New Virtual machine go to file and select "New Virtual Machine" or you can use Ctrl + N
 <img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 8_15_59" src="https://github.com/user-attachments/assets/d47655e7-5d81-4fef-9270-cf83d4bc9506" />
 
-The Wizard will open. Typical is enough for what we are doing. Click "Browse" and locate the Server ISO you downloaded earlier.
+The Wizard will open. Typical is enough for what we are doing. Click "Browse" and locate the Server ISO you downloaded earlier. You can leave the product key empty and it will work just fine.
 
 <img width="426" height="398" alt="Captures - File Explorer 9_6_2026 8_13_06" src="https://github.com/user-attachments/assets/7d909713-dfee-4705-b100-c1fd044bacd1" />
 
 <img width="426" height="398" alt="Captures - File Explorer 9_6_2026 8_13_20" src="https://github.com/user-attachments/assets/308028a3-1f2a-42f5-b872-30a649373eb7" />
 
+<img width="426" height="398" alt="Windows Server 2022 - VMware Workstation 9_6_2026 8_48_41" src="https://github.com/user-attachments/assets/3b700ae8-f40a-4317-9572-eef54cb2cafb" />
+
+Name the machine and allocate enough disk size. (you can always allocate more in the future). RAM and CPU will be automatically set to 4GB and 2 cores. (you can also change these to fit your workload) 
+
+<img width="426" height="398" alt="Screenshot 9_6_2026 8_26_50" src="https://github.com/user-attachments/assets/b95abac6-8498-4149-8f5e-10258033adeb" />
+<img width="426" height="398" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 8_52_18" src="https://github.com/user-attachments/assets/270b6b64-41af-4e10-8055-5194046888f0" />
+<img width="426" height="398" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 8_53_20" src="https://github.com/user-attachments/assets/d87d52ca-d883-4a4f-8960-92705115da58" />
+
+- An issue you will likely face when booting up the machine is this error!
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 8_54_57" src="https://github.com/user-attachments/assets/569d5358-83cb-4b6b-8b87-7a0faa19f8a9" />
 
 
+- The unusual fix to this is closing the machine and going to the machine's setting. At hardware go to floppy and disable connect at power on.
 
+<img width="755" height="702" alt="Captures - File Explorer 9_6_2026 8_56_50" src="https://github.com/user-attachments/assets/802f56e5-d077-4b0f-8b20-d3d7c31379ad" />
+<img width="755" height="702" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 8_57_37" src="https://github.com/user-attachments/assets/3b1821a8-73f6-4439-bf6c-8265ba465ed1" />
 
+- Now that the machine is working properly we will go through the setup.
+
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 8_59_52" src="https://github.com/user-attachments/assets/47d13dfc-5c45-45fe-99da-3a3ac218766a" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_00_01" src="https://github.com/user-attachments/assets/ed3d7140-8a32-43e8-b66c-72a506eb28ec" />
+
+- Choose the system you want but make sure you select desktop experience otherwise you will be doing everything in CMD!
+<img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 9_00_57" src="https://github.com/user-attachments/assets/ff09d4ac-3490-4aa7-b5ce-877e8621586e" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_01_09" src="https://github.com/user-attachments/assets/35ffb4fd-a6b2-47ca-a4fe-c1eac225783b" />
+
+Click Custom and select the available drive 
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_01_19" src="https://github.com/user-attachments/assets/ef72bdd6-0c2d-4cc9-83b5-4006fffebd42" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_01_24" src="https://github.com/user-attachments/assets/4e9b91fe-25c4-4e1a-bf59-8256aa1fe0ad" />
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_01_35" src="https://github.com/user-attachments/assets/420fcbae-96ff-40d8-82fb-f27730cb4499" />
+
+- Now that the system is installed create a password. Anything will be okay since this is a home lab and in a safe enviornment
+
+<img width="1226" height="857" alt="Screenshot 9_6_2026 9_04_10" src="https://github.com/user-attachments/assets/44ba32ee-34e8-4a08-8309-b8b06ef1147e" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_04_28" src="https://github.com/user-attachments/assets/61db2642-1cd2-47d2-8373-142dc5b825f4" />
 
 
 
