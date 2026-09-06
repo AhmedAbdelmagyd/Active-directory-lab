@@ -67,11 +67,33 @@ Great Now you have everything you need to get started!
 
 ## Step 4: Create Domain Controller and Install Server 2022
 
-Open up VMware Workstation
-To create a New Virtual machine go to file and select "New Virtual Machine" or you can use Ctrl + N
+- Open up VMware Workstation
+- I will be using this simple network structure to demonstrate how the Active Domain and Client will communicate
+<img width="1101" height="579" alt="image" src="https://github.com/user-attachments/assets/a1ad7f00-d592-480d-a707-a8cd35431684" />
+
+- To create the virtual network. Go to Edit and open Virtual Network Editor
+
+<img width="1226" height="857" alt="ActiveDirectoryLab_README md at main · BEdwardsIT_ActiveDirectoryLab - Brave 9_6_2026 9_34_43" src="https://github.com/user-attachments/assets/cd2a6a4c-fd6b-40c5-a4a6-50a5047b5557" />
+
+- Click "Add Network". Select any Network to add this is just the name
+<img width="601" height="525" alt="Captures - File Explorer 9_6_2026 9_42_13" src="https://github.com/user-attachments/assets/71f452e1-a875-4fbe-9c11-5cc1667edebf" />
+<img width="601" height="554" alt="image" src="https://github.com/user-attachments/assets/85292da7-bcec-4836-92d1-e883acc4291d" />
+
+- After creating the network click "Change Settings" to start editing the network
+<img width="601" height="525" alt="Screenshot 9_6_2026 9_45_49" src="https://github.com/user-attachments/assets/11eafb34-7205-4c7a-9a8a-eee194b49315" />
+
+- Select Host-only because we want the network to be between the virtual machines only which means none will have internet
+- Disable Connect a host to isolate the network
+- Disable DHCP we will be creating our own
+- IP: 10.10.10.0, Subnet: 255.255.255.0
+<img width="601" height="497" alt="Photos 9_6_2026 9_54_52" src="https://github.com/user-attachments/assets/4c7b3808-9e0e-453e-bd97-d176574ba90b" />
+
+
+  
+- To create a New Virtual machine go to file and select "New Virtual Machine" or you can use Ctrl + N
 <img width="1226" height="857" alt="Captures - File Explorer 9_6_2026 8_15_59" src="https://github.com/user-attachments/assets/d47655e7-5d81-4fef-9270-cf83d4bc9506" />
 
-The Wizard will open. Typical is enough for what we are doing. Click "Browse" and locate the Server ISO you downloaded earlier. You can leave the product key empty and it will work just fine.
+- The Wizard will open. Typical is enough for what we are doing. Click "Browse" and locate the Server ISO you downloaded earlier. You can leave the product key empty and it will work just fine.
 
 <img width="426" height="398" alt="Captures - File Explorer 9_6_2026 8_13_06" src="https://github.com/user-attachments/assets/7d909713-dfee-4705-b100-c1fd044bacd1" />
 
@@ -79,7 +101,7 @@ The Wizard will open. Typical is enough for what we are doing. Click "Browse" an
 
 <img width="426" height="398" alt="Windows Server 2022 - VMware Workstation 9_6_2026 8_48_41" src="https://github.com/user-attachments/assets/3b700ae8-f40a-4317-9572-eef54cb2cafb" />
 
-Name the machine and allocate enough disk size. (you can always allocate more in the future). RAM and CPU will be automatically set to 4GB and 2 cores. (you can also change these to fit your workload) 
+- Name the machine and allocate enough disk size. (you can always allocate more in the future). RAM and CPU will be automatically set to 4GB and 2 cores. (you can also change these to fit your workload) 
 
 <img width="426" height="398" alt="Screenshot 9_6_2026 8_26_50" src="https://github.com/user-attachments/assets/b95abac6-8498-4149-8f5e-10258033adeb" />
 <img width="426" height="398" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 8_52_18" src="https://github.com/user-attachments/assets/270b6b64-41af-4e10-8055-5194046888f0" />
@@ -113,6 +135,39 @@ Click Custom and select the available drive
 
 <img width="1226" height="857" alt="Screenshot 9_6_2026 9_04_10" src="https://github.com/user-attachments/assets/44ba32ee-34e8-4a08-8309-b8b06ef1147e" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_04_28" src="https://github.com/user-attachments/assets/61db2642-1cd2-47d2-8373-142dc5b825f4" />
+
+- Windows Server requires you to press Ctrl + Alt + Delete which you can send by pressing the button in the picture. (This is only needed in a virtual environment because Ctrl + Alt is used to exit the machine)
+
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_11_21" src="https://github.com/user-attachments/assets/fdd10cdd-7e12-49ef-97b3-4ca731854c5d" />
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_14_28" src="https://github.com/user-attachments/assets/57cba3e0-46dc-45ff-bb04-d01901ccbb05" />
+
+
+- Once you login windows server will start on its own.
+<img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_16_47" src="https://github.com/user-attachments/assets/f8d3fec5-628a-4695-b78d-ae8edd814be3" />
+
+- Right now we will go the setting to change the name of the device
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_24_06" src="https://github.com/user-attachments/assets/239441bd-56dc-465d-a1e4-dada441c0956" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_24_21" src="https://github.com/user-attachments/assets/29983c34-cf57-4e31-b3eb-b4fbbe034f2f" />
+<img width="1343" height="882" alt="ActiveDirectoryLab_README md at main · BEdwardsIT_ActiveDirectoryLab - Brave 9_6_2026 9_22_34" src="https://github.com/user-attachments/assets/fe3df9db-cee5-4aa3-b1ec-62183c08cf4f" />
+<img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_22_51" src="https://github.com/user-attachments/assets/caf3ebf9-ea3c-4a23-bff7-eb15f4535d22" />
+<img width="1343" height="882" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_23_00" src="https://github.com/user-attachments/assets/04a514ec-a716-4534-b4f6-ba5cd2399bbd" />
+
+- After the restart we can finally go to windows server
+- Go to Manage and from there select Add Role and Features
+
+<img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_17_46" src="https://github.com/user-attachments/assets/510c68fa-4087-4841-95f5-4a067ee98540" />
+<img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_18_19" src="https://github.com/user-attachments/assets/0d4a2478-0f52-4a2a-9b3f-fb4fa1e03553" />
+
+- From here we will create the server and domain controller
+
+<img width="1343" height="882" alt="Captures - File Explorer 9_6_2026 9_19_53" src="https://github.com/user-attachments/assets/8c0c8699-a89a-4dfa-af71-70ed1a8dcccc" />
+
+<img width="1343" height="882" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 9_21_02" src="https://github.com/user-attachments/assets/56612209-b393-492f-add1-dd1ff4170a8a" />
+
+- When selecting the server we can identify by the name we just gave it
+
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 9_29_55" src="https://github.com/user-attachments/assets/e00356aa-24b7-47bc-8794-3db622185715" />
 
 
 
