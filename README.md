@@ -244,6 +244,7 @@ Click Custom and select the available drive
 <img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_18_32" src="https://github.com/user-attachments/assets/6aa2547f-2f0b-4670-88db-ac9f5e920280" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_44" src="https://github.com/user-attachments/assets/2d4e3184-3ed3-4b3f-a041-b2ced9082499" />
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_48" src="https://github.com/user-attachments/assets/d1c48790-84e0-4a2c-8027-d168d2661403" />
+
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_6_2026 10_18_53" src="https://github.com/user-attachments/assets/450f9875-138c-4de8-9092-541eb66fe3c9" />
 
 - Wait for the Perquisite check to complete.
@@ -251,4 +252,47 @@ Click Custom and select the available drive
 - Click Install. The installation is a long process and will take time
 <img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_50_11" src="https://github.com/user-attachments/assets/c23e372b-3777-4193-9402-32b38db00ca6" />
 
+- After the restart you will be greeted with this screen.
+- sign in.
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_6_2026 10_58_03" src="https://github.com/user-attachments/assets/15eb4d64-72d4-492f-be7a-92f01b904d69" />
+
+## Step 5 Create Organizational unit (OU) and Domain Admin Account
+- Lets go to Active Domain Users and Computers
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_23_05" src="https://github.com/user-attachments/assets/e29b8a08-d0de-400b-877a-02a7b7df4f8b" />
+
+- Right click on your domain
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_9_2026 14_25_41" src="https://github.com/user-attachments/assets/b2719a3e-2089-48e8-9340-37951d5c29ba" />
+
+- Go to "New" and Select "Organizational Unit"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_26_12" src="https://github.com/user-attachments/assets/fd82a57f-a19b-4052-a72a-946ecb612ff6" />
+
+- Give it a name. It could be anything but its best practice to be specific and clear to avoid confusion in the future.
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_26_42" src="https://github.com/user-attachments/assets/50b7b9de-8d4b-403b-8898-b2850ff48c0b" />
+
+- Right click the newly created OU
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_32_27" src="https://github.com/user-attachments/assets/3fd626c9-07ef-489c-b499-34d1fc959035" />
+
+- Select "User" to begin creating one
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_32_38" src="https://github.com/user-attachments/assets/65f01c8d-7531-468a-80bf-9081b30129c7" />
+
+- Fill in the name of the user
+- Give the user a logon name
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_44" src="https://github.com/user-attachments/assets/92ad01a5-22cb-4c3a-bb0e-56835951d66e" />
+
+- Create a password
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_59" src="https://github.com/user-attachments/assets/07c08c6b-f8a4-4a40-8e8c-dc870fb7c8f4" />
+
+- Now that the user is created right click and go to property
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_35_11" src="https://github.com/user-attachments/assets/53b8dfd4-f346-4d24-a157-239c61529a71" />
+<img width="1226" height="857" alt="Brave 9_9_2026 14_37_05" src="https://github.com/user-attachments/assets/d5bcba0f-e34b-475a-b594-e0ab6c79a7d1" />
+
+- Go to "Member Of"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_37_12" src="https://github.com/user-attachments/assets/8000ad9e-8c4c-4bae-b347-c5487b9f3ba5" />
+
+- Click "Add" to add the user to a group
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_37_35" src="https://github.com/user-attachments/assets/5db6dc23-0e72-4f48-b9a5-e8449a927246" />
+
+- We are adding the user to domain admins group
+- This way the user is recognized as the domain admin and will have administrative privileges 
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_38_03" src="https://github.com/user-attachments/assets/25a39ef8-911b-4809-8ab1-e0b10e060c72" />
 
