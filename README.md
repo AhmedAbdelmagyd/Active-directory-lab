@@ -282,6 +282,12 @@ Click Custom and select the available drive
 - Create a password
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_59" src="https://github.com/user-attachments/assets/07c08c6b-f8a4-4a40-8e8c-dc870fb7c8f4" />
 
+- Select "Password Never expires
+- Remove "User must change password on next logon"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_59" src="https://github.com/user-attachments/assets/000fc543-af02-4ce9-9d9a-dfb6c3c8cb8b" />
+<img width="1226" height="857" alt="Captures - File Explorer 9_15_2026 17_51_55" src="https://github.com/user-attachments/assets/79c739c2-aa2d-4091-ae29-01df043d31d8" />
+
+
 - Now that the user is created right click and go to property
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_35_11" src="https://github.com/user-attachments/assets/53b8dfd4-f346-4d24-a157-239c61529a71" />
 <img width="1226" height="857" alt="Brave 9_9_2026 14_37_05" src="https://github.com/user-attachments/assets/d5bcba0f-e34b-475a-b594-e0ab6c79a7d1" />
@@ -295,4 +301,12 @@ Click Custom and select the available drive
 - We are adding the user to domain admins group
 - This way the user is recognized as the domain admin and will have administrative privileges 
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_38_03" src="https://github.com/user-attachments/assets/25a39ef8-911b-4809-8ab1-e0b10e060c72" />
+
+- Great now our user is setup
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_38_15" src="https://github.com/user-attachments/assets/d61a3c4f-d63f-4d06-ab6d-92f149751ebb" />
+
+
+
+
+
 
