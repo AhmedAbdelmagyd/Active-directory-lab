@@ -282,11 +282,10 @@ Click Custom and select the available drive
 - Create a password
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_59" src="https://github.com/user-attachments/assets/07c08c6b-f8a4-4a40-8e8c-dc870fb7c8f4" />
 
-- Select "Password Never expires
+- Select "Password Never expires"
 - Remove "User must change password on next logon"
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_34_59" src="https://github.com/user-attachments/assets/000fc543-af02-4ce9-9d9a-dfb6c3c8cb8b" />
 <img width="1226" height="857" alt="Captures - File Explorer 9_15_2026 17_51_55" src="https://github.com/user-attachments/assets/79c739c2-aa2d-4091-ae29-01df043d31d8" />
-
 
 - Now that the user is created right click and go to property
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_35_11" src="https://github.com/user-attachments/assets/53b8dfd4-f346-4d24-a157-239c61529a71" />
@@ -302,11 +301,67 @@ Click Custom and select the available drive
 - This way the user is recognized as the domain admin and will have administrative privileges 
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_38_03" src="https://github.com/user-attachments/assets/25a39ef8-911b-4809-8ab1-e0b10e060c72" />
 
-- Great now our user is setup
+- Great now our user is set
 <img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_9_2026 14_38_15" src="https://github.com/user-attachments/assets/d61a3c4f-d63f-4d06-ab6d-92f149751ebb" />
 
+- Now sign out and login in with the Admin account
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 17_42_46" src="https://github.com/user-attachments/assets/2a1f9235-df45-418d-8b7c-9a74ce3693c0" />
+<img width="1226" height="857" alt="Captures - File Explorer 9_15_2026 18_00_51" src="https://github.com/user-attachments/assets/a5478be8-9a89-4af8-83bf-9d50dbaf9ca7" />
 
+## Step 6 Setting DHCP on Active Directory
 
+- One more go to add roles or features
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_04_11" src="https://github.com/user-attachments/assets/a580cf7f-1858-4e3e-ac50-93695781c066" />
+
+- Same like before go to server roles but this time select DHCP Server
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_04_56" src="https://github.com/user-attachments/assets/561d7de1-2196-4bb9-b056-6b76a2956161" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_05_03" src="https://github.com/user-attachments/assets/80e9f71e-fd78-40e8-915e-847482c28956" />
+
+- Install the server
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_05_31" src="https://github.com/user-attachments/assets/e53cb247-e929-475e-87ea-c1d1b3758986" />
+
+- Once installation is done a flag will appear
+- Click Complete DHCP configuration
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_13_16" src="https://github.com/user-attachments/assets/3b015748-c75b-48b0-a042-f8fa81301fb0" />
+
+- As a user you now have to authorize the server and commit
+- You have to get used to this working as an admin
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_13_43" src="https://github.com/user-attachments/assets/06885a5d-8a66-428a-9509-84abecb455ef" />
+
+- Go to tools and select DHCP
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_26_37" src="https://github.com/user-attachments/assets/8d7045a4-479e-43e1-b5c5-51ef3654cbbe" />
+
+- Right-click IPV4
+- Head over to scope to begin
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_14_07" src="https://github.com/user-attachments/assets/b554e01b-ce99-4289-b4d1-d397f73d8491" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_14_16" src="https://github.com/user-attachments/assets/d64f3df9-6a27-443e-beb6-c0cbe3b8b6f3" />
+
+- Starting we will give the scope a name
+- We will name it "IT"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_14_52" src="https://github.com/user-attachments/assets/e9cf2154-194f-4591-8c16-d8d5c50474eb" />
+
+- Here we will give the scope we planned earlier from 100 to 200
+- The length is 24 which will translate to 255.255.255.0; the subnet we want
+<img width="1101" height="579" alt="646878496-a1ad7f00-d592-480d-a707-a8cd35431684 (2)" src="https://github.com/user-attachments/assets/eee90c1d-a980-4fe6-9f8d-7d2e2ec452b7" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_18_04" src="https://github.com/user-attachments/assets/dd085566-5e84-4750-abad-856aa9d89ffa" />
+
+- For the rest we will go with the default
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_18_18" src="https://github.com/user-attachments/assets/fe320df8-e376-44be-ae54-df9faa929d8a" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_18_41" src="https://github.com/user-attachments/assets/85f1b4bd-63b5-4438-854b-d3f8dada2795" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_18_54" src="https://github.com/user-attachments/assets/1d96fb6b-7e22-4ce4-8e63-d2be21769ec5" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_19_27" src="https://github.com/user-attachments/assets/fa0f200d-091a-4538-afb8-789a6e7510fd" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_19_44" src="https://github.com/user-attachments/assets/5f3120da-3532-4c44-8f11-3510b6fd8873" />
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_19_57" src="https://github.com/user-attachments/assets/34ccc6ed-5f48-4195-ab52-bc2f7830886d" />
+
+- After making sure everything is correct
+- Click "Finish"
+<img width="1226" height="857" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_20_03" src="https://github.com/user-attachments/assets/7ef84bf9-7b52-4b81-8e78-5ea20f42ed41" />
+
+- Perfect now our DHCP Server is up and will distribute IP addresses from our scope
+
+## Step 7 Joining a Device to the domain
+
+- Lets begin by installing windows 11 from the iso
 
 
 
