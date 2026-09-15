@@ -362,6 +362,104 @@ Click Custom and select the available drive
 ## Step 7 Joining a Device to the domain
 
 - Lets begin by installing windows 11 from the iso
+- Same as before with the windows server
+<img width="426" height="398" alt="Captures - File Explorer 9_15_2026 18_44_33" src="https://github.com/user-attachments/assets/82683e33-9262-4368-bb4e-f045de5ec4bb" />
+<img width="426" height="398" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_44_46" src="https://github.com/user-attachments/assets/59f12afe-0136-4aa3-9c76-0227724656cf" />
+<img width="426" height="398" alt="Screenshot 9_15_2026 18_46_50" src="https://github.com/user-attachments/assets/d1f38629-ef73-4ddb-b2e1-a538392ed1c1" />
+
+- For windows you will need to encrypt some files and will need a password you can generate one
+<img width="426" height="398" alt="VMware Workstation 9_6_2026 8_28_27" src="https://github.com/user-attachments/assets/669877b4-1719-4ad3-acc5-5320429bbbad" />
+<img width="426" height="398" alt="Screenshot 9_15_2026 18_46_50" src="https://github.com/user-attachments/assets/ffc8b3dd-bae0-4adf-b36f-2729191441cf" />
+<img width="426" height="398" alt="Windows Server 2022 - VMware Workstation 9_15_2026 18_50_19" src="https://github.com/user-attachments/assets/293ca069-68a3-44d8-8659-6525dda2b6c9" />
+
+- The machine will start and will go to this screen after a few seconds
+- It's fine press enter to start it again
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 18_53_45" src="https://github.com/user-attachments/assets/57c8a621-4b19-4967-8b93-30fc64daa84b" />
+
+- When you see this screen click anything for the setup to begin
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 18_54_24" src="https://github.com/user-attachments/assets/f39cb676-945f-47dd-8783-bc6ed7b0ce18" />
+
+- Select what you want and click Next
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 18_56_50" src="https://github.com/user-attachments/assets/f4089bcd-29d3-4879-a4b8-b5f249efffce" />
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_56_52" src="https://github.com/user-attachments/assets/10e328e5-d400-4c76-b1c3-ab60e3942b5c" />
+
+- Select Install windows 11 and click I agree
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_57_05" src="https://github.com/user-attachments/assets/ba6fc4e3-c2ca-42ff-903e-6b686261dc38" />
+
+- Select I don't have a product key
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_57_10" src="https://github.com/user-attachments/assets/77b8e3fa-299d-4920-a94d-5b9fc42e8c2e" />
+
+- We will go with Pro
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_57_51" src="https://github.com/user-attachments/assets/e4055cd7-95d0-420a-990b-637cc98e2a9a" />
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_57_59" src="https://github.com/user-attachments/assets/49da472d-fb8a-466f-88dc-a6d2fa6561cb" />
+
+- Select the desk and click Next
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_58_08" src="https://github.com/user-attachments/assets/03cbf9e4-a8d6-46b3-98ae-797752aedd49" />
+
+- Install
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 18_58_13" src="https://github.com/user-attachments/assets/aa706cc9-17ed-41df-a880-ae7c0bd905f7" />
+
+- Great we're almost there
+- Since we're offline and will not be using the internet we need to bypass the internet requirement
+<img width="1226" height="857" alt="Captures - File Explorer 9_15_2026 19_14_57" src="https://github.com/user-attachments/assets/96a2e75b-257e-4513-ba8d-3917da0c63b0" />
+
+- Click Shift + F10 this will open command prompt
+- Click on it to start typing
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_15_37" src="https://github.com/user-attachments/assets/972e8240-d2ae-47db-86f9-1054c91516a3" />
+
+- Type in the command "oobe\bypassnro"
+- You might have to quickly press enter a couple of time for it to go through
+- When it goes through it will restart
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_17_17" src="https://github.com/user-attachments/assets/adcec0c6-ae1e-48f9-b06b-888d39b3c92e" />
+
+- Now we can go through the setup and select whatever we want
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_21_46" src="https://github.com/user-attachments/assets/9c5f50fb-ed90-40af-b59e-c2ca0c9de0cb" />
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_22_24" src="https://github.com/user-attachments/assets/449ea182-cf92-4f56-b10a-5c59e73d2215" />
+
+- When we reach the connection page you will see "I don't have internet"
+- We're able to choose it because of the command normally you won't be able to view it
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_22_46" src="https://github.com/user-attachments/assets/dcc7bbf8-80b4-4374-9cc6-3dd2488aac5e" />
+
+- Write any name and you can leave the password blank
+- Then windows will begin creating the profile
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_26_40" src="https://github.com/user-attachments/assets/973095fc-9dc7-4853-b374-2c3a0cc15d5e" />
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_29_22" src="https://github.com/user-attachments/assets/894ed4a0-7fca-4d24-960e-354d6e125674" />
+
+- Let's add the machine to our virtual network
+- Open the machine's setting
+- Select Custom and the network's name
+<img width="755" height="702" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_30_51" src="https://github.com/user-attachments/assets/e1ee0ebe-ddfb-4904-b22c-b25be2de16f4" />
+<img width="755" height="702" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_30_58" src="https://github.com/user-attachments/assets/55be9557-050d-4306-83e4-8bce40a6749b" />
+
+- Open command prompt and type in the command "ipconfig"
+- You will see that the device got assigned an ip from the scope in the dhcp server we created earlier
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_35_44" src="https://github.com/user-attachments/assets/a7e75d4e-3e6d-417f-a2e2-3c1e0baf682f" />
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_35_56" src="https://github.com/user-attachments/assets/e96f060d-8e19-4664-9d30-adb6a9e5ed00" />
+
+- Open the settings
+- Go to system and scroll down to About
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_43_40" src="https://github.com/user-attachments/assets/05506d3a-2bbd-4571-b6e2-33d69b0071ca" />
+
+- In about scroll down until you find "Domain or Workgroup"
+- Click it
+<img width="1226" height="857" alt="Editing Active-directory-lab_README md at main · AhmedAbdelmagyd_Active-directory-lab - Brave 9_15_2026 19_45_22" src="https://github.com/user-attachments/assets/d14b5305-f551-4ccd-adba-4bb94308e53f" />
+
+- This page will open
+- Click "Change"
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_45_53" src="https://github.com/user-attachments/assets/38ec90f2-1dfe-4a76-b254-77a3da302f33" />
+
+- We will change the device's name to Client-01 as per the lab
+- Select domain and type in the full domain name
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_46_52" src="https://github.com/user-attachments/assets/2606a880-6552-4a1f-a1c3-3014245b472b" />
+
+- When the domain is found you will need to use the admin account to add the device to the domain
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_47_16" src="https://github.com/user-attachments/assets/64a6e599-7332-4f40-b9e3-ea81ab13d461" />
+
+- Great the device is added and will need to restart to completely join
+- Restart the device
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_47_23" src="https://github.com/user-attachments/assets/772aa594-89ec-48e9-8396-76c604eb5916" />
+<img width="1226" height="857" alt="Screenshot 9_15_2026 19_53_55" src="https://github.com/user-attachments/assets/5154c03d-a64d-425a-a6fa-10893e90dc09" />
+
 
 
 
