@@ -460,6 +460,22 @@ Click Custom and select the available drive
 <img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_15_2026 19_47_23" src="https://github.com/user-attachments/assets/772aa594-89ec-48e9-8396-76c604eb5916" />
 <img width="1226" height="857" alt="Screenshot 9_15_2026 19_53_55" src="https://github.com/user-attachments/assets/5154c03d-a64d-425a-a6fa-10893e90dc09" />
 
+- After the restart you will notice the changes and that the name we have given to the device is not there
+- Don't worry about it the name was not in effect before the complete restart and will show you in just a moment
+- Go to other user
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_22_2026 4_20_49" src="https://github.com/user-attachments/assets/30297a09-6c79-4a67-8cce-d0eec1cc2e4a" />
 
+- You will see "sign in to" your domain name
+- Go ahead and enter with your account and windows will quickly set up a profile for you on the device
+<img width="1226" height="911" alt="Windows 11 x64 - VMware Workstation 9_22_2026 4_20_49 png 9_22_2026 4_40_10" src="https://github.com/user-attachments/assets/743e5d51-f1b6-44a9-b707-34650c0633a5" />
 
+- Once you're inside you can open the settings to check the device's name
+- Then open Commands Prompt and type in the command "ipconfig /all" to confirm everything is correct
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_22_2026 4_20_49 png 9_22_2026 4_55_59" src="https://github.com/user-attachments/assets/94f1fc0f-dcce-4167-aca0-ce4f7c85de31" />
+<img width="1226" height="857" alt="Windows 11 x64 - VMware Workstation 9_22_2026 4_57_54" src="https://github.com/user-attachments/assets/9f9dea03-7a99-4334-af22-f0d08cfd2675" />
 
+- Lastly you can also check the device back in the active directory by going to "Active Directory Users and Computers"
+- Go to computers and you will find the devices that are on the domain
+<img width="1226" height="857" alt="Captures - File Explorer 9_22_2026 5_00_58" src="https://github.com/user-attachments/assets/ac4e43af-41d4-45e2-8808-4884d894fde8" />
+
+- Amazing everything is working and in great shape. You can add as many devices as you need and that's it for this lab thank you.
